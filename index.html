@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="/ClaseJavaScript.JS" defer></script>
+    <title>ATM-Online</title>
 </head>
 <body>
+    <form action="">
+        <h1>Login</h1>
+        <label for="">Usuario</label>
+        <input type="text" name="u" id="">
+        <label for="">Contraseña</label>
+        <input type="password" name="c" id="">
+        <input type="button" value="Ingresar" onclick="login(this.form)">
+    </form>
+    <script>
+        function login(form){
+            if (form.u.value=="usuario") {
+                if (form.c.value=="123") {
+                    location="principal.html";
+                    
+                } else {
+                    alert("error de password");
+                    
+                }
+                
+            } else {
+                alert("error de usuario")
+                
+            }
+
+        }
+    </script>
     
 </body>
 </html>
